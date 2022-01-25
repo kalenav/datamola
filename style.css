@@ -1,0 +1,129 @@
+*
+{
+  font-family: 'Open Sans', sans-serif;
+  transition-duration: 0.5s;
+}
+
+div.content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+div.menu
+{
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.menu-header
+{
+  background-color: #00B2DC;
+  color: white;
+  padding: 10px 0 7px 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+div.menu-body
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+div.menu-item
+{
+  background-color: #ededed;
+  border-bottom: solid lightgray 1px;
+  padding: 7px 0 7px 14px;
+  color: gray;
+}
+
+div.menu-item:last-child
+{
+  border-bottom: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div.menu-item:hover
+{
+  color: white;
+  background-color: black;
+  border-bottom: solid black 1px;
+  cursor: pointer;
+}
+
+div.selected-menu-item-text
+{
+  padding-top: 10px;
+  color: grey;
+  width: 400px;
+}
+
+div.selected-menu-item-text div
+{
+  max-width: 400px;
+  position: absolute;
+  opacity: 0;
+}
+
+img.img-mini
+{
+  width: 400px;
+  display: block;
+  margin-top: 10px;
+}
+
+@media all and (max-width: 1081px)
+{
+  div.content
+  {
+    flex-direction: column;
+  }
+  div.menu
+  {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  div.menu-header
+  {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    width: 20%;
+  }
+  div.menu-body
+  {
+    flex-direction: row;
+    width: 75%;
+  }
+  div.menu-item
+  {
+    border-bottom: none;
+    border-right: solid lightgray 1px;
+    width: 25%;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.menu-item:last-child
+  {
+    border-right: none;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
+  div.menu-item:hover
+  {
+    border-bottom: none;
+    border-right: solid black 1px;
+  }
+}

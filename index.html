@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CV</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class = 'content'>
+      <div class = 'menu'>
+        <div class = 'menu-header'>Menu</div>
+        <div class = 'menu-body'>
+          <div class = 'menu-item' onclick = 'reveal(1)'>General</div>
+          <div class = 'menu-item' onclick = 'reveal(2)'>Education</div>
+          <div class = 'menu-item' onclick = 'reveal(3)'>Gallery</div>
+          <div class = 'menu-item' onclick = 'reveal(4)'>Contacts</div>
+        </div>
+      </div>
+      <div class = 'selected-menu-item-text'>
+        <div class = 'general-content possible-active-content'>My name is Konstantin Loktev, I'm a 19-year-old student. I wish to try myself as a JavaScript developer. I don't feel certain about whether I want to pursuit a FrontEnd or a FullStack career, though I lean towards the former. There is no particular reason for my intention to join JS Camping specifically; I perceive it as an opportunity to enter the world of IT and see whether my skills and teachability will suffice and be enough for me to join a dev team.</div>
+        <div class = 'education-content possible-active-content'>I have graduated from Gymnasium №39 in Minsk in 2020 and am currently a sophomore at BSUIR, Faculty of Information Techonologies and Control, Artificial Intelligence specialty.</div>
+        <div class = 'gallery-content possible-active-content'>
+          Here's a photo of me from a photoshoot that me and my classmates had before graduating from our gymnasium.
+          <img class = 'img-mini' src = 'photo1.jpg'>
+        </div>
+        <div class = 'contacts-content possible-active-content'>
+          <p>E-mail: konstantin.loktev.02@mail.ru</p>
+          <p>Personal phone number: +375 (29) 870-28-60</p>
+          <p>Home phone number: 355-73-75</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
